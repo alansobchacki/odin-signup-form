@@ -1,0 +1,22 @@
+div {
+  border: 1px solid rgb(190, 9, 9);
+}
+
+body {
+  display: flex;
+}
+
+.background {
+  display: flex;
+  width: 30%;
+}
+
+.background img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.signup_form {
+  display: flex;
+  width: 70%;
+}

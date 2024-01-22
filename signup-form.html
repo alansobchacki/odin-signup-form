@@ -7,53 +7,70 @@
   <link href="signup-form.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div class="background">
+  <div class="signup-background">
     <img src="background-image.jpg" alt="Close-up photo of a green leaf plant.">
 
     <div class="odin-banner">
-      <img src="odin-lined.png" alt="The Odin Project logo.">
+      <img class="odin-logo" src="odin-lined.png" alt="The Odin Project logo.">
       <p>ODIN</p>
     </div>
 
-    <div class="image-credits">Credits to fulana de tal at site de tal.</div>
+    <div class="image-credits">Photo by Haile West at Unsplash.</div>
   </div>
 
-  <div class="signup_form">
-    <div>
+  <div class="signup-form">
+    <div class="signup-form-top">
       <p>
         This is not a real online service! You know you need something like this in your life to help you realize
         your deepest dreams. Sign up now to get started.
       </p>
-      <p>You know you want to.</p>
+      <p>You <i>know</i> you want to.</p>
     </div>
   
-    <div>
+    <div class="signup-form-mid">
+      <p>Let's do this!</p>
       <form action="example.com/path" method="post">
-        <label for="first_name">*First Name</label>
-        <input type="text" id="first_name" name="first_name">
-  
-        <label for="last_name">*Last Name</label>
-        <input type="text" id="last_name" name="last_name">
-  
-        <label for="user_email">*Email Address</label>
-        <input type="email" id="user_email" name="email" placeholder="you@example.com">
-  
-        <label for="amount">Phone Number (optional)</label>
-        <input type="number" id="amount" name="amount">
-  
-        <label for="user_password">*Password</label>
-        <input type="password" id="user_password" name="password">
-  
-        <label for="confirm_password">*Confirm Password</label>
-        <input type="password" id="confirm_password" name="confirm_password">
+        <div class="form-boxes-top">
+          <div class="form-box">
+            <label for="first_name">* FIRST NAME</label>
+            <input type="text" id="first_name" name="first_name">
+          </div>
+
+          <div class="form-box">
+            <label for="last_name">* LAST NAME</label>
+            <input type="text" id="last_name" name="last_name">
+          </div>
+        </div>
+
+        <div class="form-boxes-mid">
+          <div class="form-box">
+            <label for="user_email">* EMAIL ADDRESS</label>
+            <input type="email" id="user_email" name="email" placeholder="you@example.com">
+          </div>
+
+          <div class="form-box">
+            <label for="amount">PHONE NUMBER (OPTIONAL)</label>
+            <input type="number" id="amount" name="amount">
+          </div>
+        </div>
+
+        <div class="form-boxes-bottom">
+          <div class="form-box">
+            <label for="user_password">* PASSWORD</label>
+            <input type="password" id="user_password" name="password">
+          </div>
+
+          <div class="form-box">
+            <label for="confirm_password">* CONFIRM PASSWORD</label>
+            <input type="password" id="confirm_password" name="confirm_password">
+          </div>
+        </div>
       </form>
     </div>
   
-    <div>
+    <div class="signup-form-bottom">
       <button>Create Account</button>
-    </div>
-  
-    <div>
+
       <p>Already have an account? Log in.</p>
     </div>
   </div>

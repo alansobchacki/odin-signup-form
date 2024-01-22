@@ -1,25 +1,40 @@
+/* This is a helper CSS rule to better visualize flex 'boxes'. Leave it commented out once the code is completed. */
+/* 
+div {
+  border: 1px solid rgb(190, 9, 9);
+} 
+
+/* This resets the default HTML browser margin and padding values. Needed to remove small white borders. */
+* {  
+  margin: 0;
+  padding: 0;
+}
+
+/* This removes the scrollbar from our website */
+::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: "Norse";
   src: url("Norse-Bold.otf") format("opentype");
 }
 
-/* Remove this rule once everything is set up - it is used to visualise flexbox containers better. */
-div {
-  border: 1px solid rgb(190, 9, 9);
-}
-
 body {
   display: flex;
+  background-color:rgb(245, 245, 245);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.background {
+/* this section is responsible for the left part of our website */
+.signup-background {
   display: flex;
   position: relative;
   text-align: center;
   width: 30%;
 }
 
-.background img {
+.signup-background img {
   max-width: 100%;
   max-height: 100%;
 }
@@ -29,16 +44,20 @@ body {
   position: absolute;
   justify-content: center;
   align-items: center;
-  margin-top: 30%;
-  background-color:rgba(70, 70, 70, 0.5);
+  margin-top: 23%;
+  background-color:rgba(0, 0, 0, 0.4);
   width: 100%;
-  height: 30%;
+  height: 18%;
 }
 
 .odin-banner p {
   color: white;
   font-family: 'Norse';
-  font-size: 8rem;
+  font-size: 5rem;
+}
+
+.odin-logo {
+  height: 75%;
 }
 
 .image-credits {
@@ -48,8 +67,88 @@ body {
   bottom: 2%;
 }
 
-.signup_form {
+/* this section is responsible for the right part of our website */
+/* these are the top elements (our headline) */
+.signup-form {
   display: flex;
   flex-direction: column;
   width: 70%;
+}
+
+.signup-form-top {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 1.2rem;
+  height: 25%;
+  margin-left: 5%;
+  margin-right: 20%;
+  margin-top: 7%;
+}
+
+.signup-form-top p {
+  margin-bottom: 4%;
+}
+
+/* these are the middle elements (the core of our sign-up form)*/
+.signup-form-mid {
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(255, 255, 255);
+  height: 50%;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 3%;
+}
+
+.signup-form-mid p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.signup-form-mid input {
+  padding: 5px;
+  margin: 0.5% 0.5%;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  border-color: rgba(199, 199, 199, 0.3);
+}
+
+.form-boxes-top, .form-boxes-mid, .form-boxes-bottom {
+  display: flex;
+  width: 100%;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  font-size: 0.65rem;
+  font-weight: bold;
+  color: rgb(83, 83, 83);
+  margin-right: 4%;
+  margin-bottom: 1%;
+}
+
+/* these are the bottom elements (our call to action + button) */
+.signup-form-bottom {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  margin-left: 5%;
+}
+
+.signup-form-bottom button {
+  background-color: #596D48;
+  color: white;
+  border-radius: 6px;
+  width: 20%;
+  height: 25%;
+  margin-bottom: 3%;
+  font-weight: bold;
+  border-style: solid;
+  border-color: #596D48;
 }

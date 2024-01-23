@@ -26,6 +26,11 @@ body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* this section is responsible for the left part of our website */
 .signup-background {
   display: flex;
@@ -95,7 +100,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color:rgb(255, 255, 255);
-  height: 50%;
+  height: 45%;
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
@@ -133,22 +138,27 @@ body {
   margin-bottom: 1%;
 }
 
-/* these are the bottom elements (our call to action + button) */
+/* these are the bottom elements (our login button + log in reminder) */
 .signup-form-bottom {
   display: flex;
   flex-direction: column;
-  height: 25%;
+  height: 20%;
   margin-left: 5%;
 }
 
-.signup-form-bottom button {
+.signup-button {
   background-color: #596D48;
   color: white;
   border-radius: 6px;
   width: 20%;
-  height: 25%;
-  margin-bottom: 3%;
+  height: 30%;
+  margin-bottom: 2%;
   font-weight: bold;
   border-style: solid;
   border-color: #596D48;
+}
+
+.signup-form-bottom a {
+  color: #596D48;
+  font-weight: bold;
 }
